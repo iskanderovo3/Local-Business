@@ -1,0 +1,239 @@
+@import 'fonts.css';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+:root{
+    --Links: #aeaeae;
+    --LatoR: Lato-Regular;
+    --LatoB: Lato-Bold;
+    --LatoL: Lato-Light;
+    --OrangeColor: #ffbb42;
+    --FeaturesC: #394b50;
+    --FeaturesChildC: #7b7b7b;
+    --AboutUs: #ffc155;
+    --HeadingColor: #394b50;
+    --ParagraphColor: #394b50;
+    --PriceColor: #e7edf3;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Navbar */
+
+.navbar{
+    height: 70px;
+}
+
+.nav-link{
+    font-family: var(--LatoR);
+    font-size: 12px;
+    color: var(--Links);
+    margin: 0px 6px;
+}
+.nav-item{
+    list-style: none;
+}
+
+.home{
+    background-color: var(--OrangeColor) !important;
+    font-family: var(--LatoR);
+    border: none;
+    outline: none;
+}
+
+/* Section */
+
+section{
+    height: 500px;
+    background-color: #709dca;
+    margin-top: 4rem;
+    padding-top: 3rem;
+}
+.heading-paragraph{
+    color: var(--HeadingColor);
+    font-family: 'Open Sans', sans-serif;
+
+}
+.small-paragraph{
+    color: var(--HeadingColor);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    top: -13px;
+}
+
+/* Features */
+
+.features{
+    height: 100%;
+}
+.service-info{
+    font-family: var(--LatoB);
+    font-weight: bold;
+}
+.service-info{
+    color: var(--FeaturesC);
+}
+.service-info-child{
+    font-size: 13px;
+    color: var(--FeaturesChildC);
+}
+
+/* About us */
+
+.about-us{
+    height: 100%;
+}
+.abous-us-perents{
+    height: 100%;
+}
+.about-us-child{
+    background-color: var(--AboutUs);
+    height: 600px;
+}
+.about-us-pic{
+    background-image: url('./img/pic_3.png');
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Price  */
+
+.price{
+    background-color: var(--PriceColor);
+    height: 100%;
+}
+.card-title, .card-text{
+    font-family: var(--LatoL);
+    color: var(--FeaturesChildC);
+}
+.card-price{
+    color: var(--OrangeColor);
+    font-size: 50px;
+}
+.card-price > sup{
+    position: relative;
+    left: 10px;
+}
+.card-text{
+    font-size: 13px;
+    position: relative;
+    left: 7px;
+    top: -12px;
+    font-family: var(--LatoB);
+}
+.list-group-item{
+    color: var(--FeaturesChildC);
+    font-family: var(--LatoR);
+}
+.get-started{
+    font-family: var(--LatoR);
+}
+
+    /* How it works */
+
+.works__info-step{
+    font-family: var(--LatoB);
+    font-size: 20px;
+}
+.works__info-paragraph{
+    font-size: 15px;
+}
+.how__work-get-start-now{
+    font-size: 10px;
+}
+
+    /* Happy clients */
+
+.happy-clients{
+    background-color: var(--AboutUs);
+}
+.happy__paragraph-info{
+    font-size: 13px;
+    text-align: left;
+}
+.happy__clients-own{
+    font-family: var(--LatoR);
+}
+.happy__clients-profile-info{
+    margin: 0px 1px;
+}
+.footer{
+    background-color: #709dca;
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+.footer p{
+    padding-top: 1rem;
+}
+
+@media (max-width: 992px) {
+    .happy__clients-profile-info {
+        margin: 0px 1px;
+        height: 450px;
+    }
+}
+@media (max-width: 768px){
+    .about-us-pic {
+        background-image: url(./img/pic_3.png);
+        height: 400px;
+        background-position: center;
+        background-size: cover;
+    }
+    .mt-5 {
+        margin-top: 0rem!important;
+    }
+    .about-us-child {
+        background-color: var(--AboutUs);
+        height: 500px;
+    }
+    .pt-5 {
+        padding-top: 1rem!important;
+    }
+    .card {
+        flex: 0 0 auto;
+        width: 60%;
+        margin: 10px auto;
+    }
+    .happy__clients-profile-info{
+        height: 250px;
+    }
+}
+@media (max-width: 576px){
+    .about-us-child {
+        background-color: var(--AboutUs);
+        height: 600px;
+    }
+    .px-5 {
+        padding-right: 1rem!important;
+        padding-left: 1rem!important;
+    }
+    .card {
+        flex: 0 0 auto;
+        width: 80%;
+        margin: 10px auto;
+    }
+    .happy__clients-profile-info{
+        height: 300px;
+    }
+}
+@media (max-width: 430px){
+    .happy__clients-profile-info{
+        height: 330px;
+    }
+    .about-us-child {
+        background-color: var(--AboutUs);
+        height: 700px;
+    }
+}
